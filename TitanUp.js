@@ -34,7 +34,7 @@ TitanUp.getVersion = function ()
     return _version;
 }
 
-Ti.API.debug ('[TitanUp] initializing...');
+Ti.API.debug ('[TitanUp] version ' + TitanUp.getVersion() + ' initializing...');
 
 TitanUp.Device = require ('/TitanUp/Device');
 

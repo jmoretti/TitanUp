@@ -80,7 +80,7 @@ function initialize ()
 		|| ((_osname === 'android') && (_screensize >= 6.25));
 		
 	Ti.API.debug ('[TU.Device] _screensize: ' + _screensize);
-	Ti.API.debug ('[TU.Device] _isTablet: ' + (_isTablet) ? 'true' : 'false');
+	Ti.API.debug ('[TU.Device] _isTablet: ' + _isTablet);
 	
 	_workingWidth = _displayWidth;
 	_workingHeight = _displayHeight;
