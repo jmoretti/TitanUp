@@ -1,12 +1,8 @@
-TitanUp is a library of utility functions for Titanium Mobile that provides
-a number of custom views like an ImageGallery, a cross-platform SimplePicker,
-a SelectBar, as well as utilities for building dynamic multi-density user
-interfaces, managing themes, and managing windows within tabgroups.
+Each module that needs to access other modules within the libary will need a reference to the top-level
+TitanUp module.  It must have a private TU member as well as a TUInit() function so that the parent library
+can initialize the TU variable immediately after requiring the module.
 
-This distribution includes a demo app that uses all the features of the
-library, so it should be fairly apparent how to use it.
+Each application module that needs to access the library should require it thusly:
 
-For more on the capabilities of the library, see
-
-http://smorgasbork.com/component/content/article/38-titanium-mobile/136-titanium-mobile-utility-library-titanup
+var TU = require ('TitanUp/TitanUp');
 
